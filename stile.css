@@ -1,0 +1,94 @@
+body {
+    background-color: white;
+    color: black;
+}
+div.centra {
+    margin-left: 9%;	
+    width: 95%;
+}
+div.centra1 {
+    margin:auto;
+	width: 20em;
+}
+div.centra2 {
+    margin-left: 9%;
+	width: 46em;
+}
+div.centra3 {
+    margin-left: 9%;	
+    width: 20em;
+}
+th.verde:hover {
+    background-color: #FFFF00;
+    color: #191970;
+}
+h1 {
+    background-color: #FFFFFF;
+    color: #00008B;
+    font: bold 1.4em Arial,Helvetica,sans-serif;
+    text-align: center;
+}
+span {
+    display: inline;
+    float: left;
+    padding: 6px;
+    width: 16em;
+}
+input.txt {
+    border: 1px inset #00008B;
+    color: blue;
+    width: 200px;
+}
+label {
+    color: blue;
+    font: bold 0.9em Arial,Helvetica,sans-serif;
+    width: 40%;
+}
+fieldset.delimita {
+    border: 1px dotted #61B5CF;
+    margin-top: 0.6em;
+    padding: 0.4em;
+}
+legend {
+    background-color: #FFFFFF;
+    color: #00008B;
+    font: bold 1.1em Arial,Helvetica,sans-serif;
+}
+th {
+    background-color: #E2E2E2;
+    border: 1px solid black;
+    color: #000000;
+    font-weight: normal;
+    margin: 0;
+    padding: 0.2em 0.4em;
+}
+.bianco {
+    background-color: #FFCD40;
+    color: black;
+}
+.rosso {
+    background-color: #FF1E00;
+    color: black;
+}
+.verde {
+    background-color: #68A447;
+    color: black;
+}
+table {
+    margin: auto;
+    width: 85%;
+}
+.w3c {
+    margin: auto;
+    width: 10%;
+}
+.divInternoCella{
+	font:  0.9em Arial,Helvetica,sans-serif;
+	width:75px;
+	overflow: hidden;
+}
+.divTitolo{
+	font: bold 0.9em Helvetica,sans-serif;
+	width:75px;
+	overflow: hidden;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<!-- miapagina.html -->
+<html>
+
+  <head>
+    <title> Prenotazioni </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+	   <link rel="stylesheet" type="text/css" href="stile.css" >	  
+    <script type="text/javascript" src="./mioscript.js">
+    </script>
+    <script type="text/javascript">
+      // gli oggetti gli creo nell'head per evitare side effect 
+      //(effetti collaterali)
+       var s = new Studente();      
+			 var c = new Calendario();
+			 c.creaCalendario();
+	  </script>
+  </head>
+  
+  <body  id="idCorpo">
+    <h1> PRENOTAZIONE ORA DI RIPETIZIONE </h1>
+    <form action="" id="idForm">
+    
+		  <fieldset class="delimita"  >
+		  <legend>Inserisci i tuoi dati </legend>        	
+				<div class="centra">          
+					<span >              
+						<label for="idNome"> Nome:</label><br> 
+						<input type="text" name="nome" id="idNome" size="25"
+						  onChange ="c.correggiNome(this)">
+					</span>
+					<span>  
+						<label for="idCognome"> Cognome:</label><br>
+						<input type="text" name="cognome" id="idCognome"size="25" >              
+					</span>              
+				   
+					<span >
+						<label for="idEmail"> E-mail:</label><br>
+						<input type="text" name="email" id="idEmail" size="25"> 
+					</span>
+					<span>
+						<label for="idTelefono"> Telefono:</label><br>
+						<input type="text" name="telefono" id="idTelefono" size="25"	>
+					</span>
+				</div>
+		  </fieldset>     
+		  <fieldset class="delimita"  >
+			
+			  <legend>Scegli la materia</legend>
+				  <div class="centra3">
+						
+						<label for="idMateria"> Scegli la materia di cui vuoi 
+								  la ripetizione:</label><br> 
+						
+						<select name="materia" id="idMateria"  > 		               	                  
+							<option id="idItaliano" value="Italiano">
+								Italiano</option>
+							<option  id ="idMatematica" 
+								value="Matematica">Matematica</option>
+							<option  id="idInglese"  value="Inglese">
+								Inglese</option>
+							<option  id="idInformatica" 
+								value="Informatica" >Informatica</option>
+						</select> 
+				 </div>        
+		  </fieldset>
+		  
+		  <fieldset class="delimita">
+				<legend>Seleziona giorno ed ora</legend>
+					 <div class="centra2"> 
+						  <label   for="idCalendario"> Seleziona il giorno e l'ora
+							in cui vuoi fare la ripetizione, poi clicca con il pulsante 
+							destro del mouse
+						  </label>
+					</div>
+					<div id="idCalendario">
+						 <script type="text/javascript">               
+							c.visualizza();         
+						 </script>
+					</div>
+					<div >
+						 <input type="button" name= "cancella" value="cancella"
+								 onclick="c.cancella(); ">
+					</div>
+		  </fieldset>
+		   
+		  <fieldset class="delimita">
+			   <legend>Conferma prenotazione</legend>  	    
+					<div id="idBottoni"></div>
+					<div  >
+						 <input type="button" id ="idConferma" name= "conferma" 
+						  value="Conferma" onclick="s.creaStudente();s.controllaDati()">  	         
+					</div> 	  	       
+		  </fieldset>
+    </form>
+    	
+    <div class="w3c">
+      <span>
+        <a href="http://validator.w3.org/check?uri=referer">
+          <img src="http://www.w3.org/Icons/valid-html401" 
+          alt="Valid HTML 4.01 Strict" height="31" width="88">
+        </a>
+      
+    		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    			<img style="border:0;width:88px;height:31px"
+      		src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+      		alt="CSS Valido!" />
+        </a>
+      </span> 
+    </div>
+    
+  </body>
+</html>
